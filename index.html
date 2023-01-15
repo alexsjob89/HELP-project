@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/305c75402b.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.2/swiper-bundle.min.js" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
+
     <title>help project</title>
 </head>
 <style>
@@ -28,19 +29,87 @@
         </div>
     </div>
 
-    <section class="layouts-section">
-        <div class="layout-content">
-            <h1 class="layout_title">
-                WhatsHelp Will Allow Your Users To Connect You Through Whatsapp.
-            </h1>
-            <p class="layout_paragraph">This will help users & customers to contact with the site owner<br><br> and to ask for support with one click using their whatsapp number.</p>
+    <section class="home-section">
+        <div class="home-content">
+            <h1 class="home_title"> Help Will Allow Your Users To Connect You Through Whatsapp. </h1>
+            <p class="home_paragraph">This will help users & customers to contact with the site owner<br><br> and to ask for support with one click using their whatsapp number.</p>
 
-            <button class="seeDemos">See Demos</button>
+            <button class="seeDemos btn-slide">See Demos</button>
         </div>
-        <img src="/images/layout-3.png" width="650" class=" img-one slideImg">
-        <img src="/images/layout-4.png" width="650" class=" img-two slideImg">
-        <img src="/images/layout-3.png" width="650" class=" img-three slideImg">
-        <img src="/images/layout-4.png" width="650" class=" img-four slideImg">
+        <div class="my-swiper" id="my-swiper">
+            <img src="/images/layout-3.png" width="650" class=" img-one slideImg">
+            <img src="/images/layout-4.png" width="650" class=" img-two slideImg">
+            <img src="/images/layout-3.png" width="650" class=" img-three slideImg">
+            <img src="/images/layout-4.png" width="650" class=" img-four slideImg">
+        </div>
+    </section>
+
+
+    <section class="buttons-layouts">
+        <div class="buttons-content-title">
+            <h2 class="buttons-title">DIFFERENT POPUP LAYOUTS</h2>
+            <h1 class="para-buttons">Popup Layouts With Different Animation</h1>
+        </div>
+        <!-- buttons section -->
+        <div class="poup-buttons">
+            <button class="btnFade fade-right">fade right</button>
+            <button class="btnFade fade-down">fade down</button>
+            <button class="btnFade scale">fade in scale</button>
+            <button class="btnFade rotation">rotation</button>
+            <button class="btnFade slide-fall">slide fall</button>
+            <button class="btnFade slide-down">slide down</button>
+            <button class="btnFade ease-down">ease down</button>
+            <button class="btnFade rotate-left">rotate left</button>
+            <button class="btnFade flip-horizontal">flip horizontal</button>
+            <button class="btnFade flip-vertical">flip vertical</button>
+            <button class="btnFade flip-up">flip up</button>
+            <button class="btnFade super-scaled">super scaled</button>
+            <button class="btnFade slide-up">slide up</button>
+        </div>
+
+        <!-- layout cards section -->
+        <div class="layouts-cards">
+            <div class="box header-center">
+                <img src="./images/form-layout.png" alt="" class="layout-img">
+                <button class="btnLay header-center">header center</button>
+            </div>
+            <div class="box header-center-two">
+                <img src="./images/header-left.png" alt="" class="layout-img">
+                <button class="btnLay header-left">header left</button>
+            </div>
+            <div class="box header-center-three">
+                <img src="./images/layout-button.png" alt="" class="layout-img">
+                <button class="btnLay header-left">list layout</button>
+            </div>
+            <div class="box header-center-four">
+                <img src="./images/layout-color.png" alt="" class="layout-img">
+                <button class="btnLay header-left">grid layout</button>
+            </div>
+            <div class="box header-center-five">
+                <img src="./images/layout-dark.png" alt="" class="layout-img">
+                <button class="btnLay header-left">offline layout</button>
+            </div>
+            <div class="box header-center-six">
+                <img src="./images/layout-grid.png" alt="" class="layout-img">
+                <button class="btnLay header-left">left position</button>
+            </div>
+            <div class="box header-center-seven">
+                <img src="./images/layout-left.png" alt="" class="layout-img">
+                <button class="btnLay header-left">dark layout</button>
+            </div>
+            <div class="box header-center-eight">
+                <img src="./images/layout-list.png" alt="" class="layout-img">
+                <button class="btnLay header-left">different color</button>
+            </div>
+            <div class="box header-center-nine">
+                <img src="./images/layout-offline.png" alt="" class="layout-img">
+                <button class="btnLay header-left">diferent button</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="layouts">
 
     </section>
 
@@ -53,6 +122,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 

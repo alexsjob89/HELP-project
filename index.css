@@ -19,8 +19,9 @@ body {
     overflow: visible;
     background-color: rgb(255, 255, 255, 0.1);
     /* box-shadow: 0px 7px 12px -4px rgba(255, 255, 255, 0.49); */
-    -webkit-backdrop-filter: blur(px);
+    -webkit-backdrop-filter: blur(40px);
     width: 100%;
+    z-index: 10;
 }
 
 .logo {
@@ -162,8 +163,8 @@ p {
 
 /* end of navbar */
 
-.layouts-section {
-    /* border: 1px solid white; */
+.home-section {
+    border: 1px solid white;
     position: absolute;
     z-index: 0;
     width: 100%;
@@ -205,7 +206,7 @@ p {
     cursor: grabbing;
 }
 
-.layout-content {
+.home-content {
     position: absolute;
     /* border: 1px solid white; */
     width: 50rem;
@@ -215,14 +216,14 @@ p {
     overflow-x: hidden;
 }
 
-.layout_title {
+.home_title {
     font-size: 60px;
     color: white;
     font-family: sans-serif;
     font-weight: 1000;
 }
 
-.layout_paragraph {
+.home_paragraph {
     color: white;
     font-size: 25px;
     font-weight: 500;
@@ -231,6 +232,7 @@ p {
 }
 
 .seeDemos {
+    position: relative;
     font-size: 20px;
     padding: 15px 25px;
     border-radius: 13px;
@@ -239,4 +241,48 @@ p {
     background-color: black;
     color: white;
     margin-top: 30px;
+    outline: none;
+}
+
+.btn-slide::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background-color: white;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+    overflow: none;
+    border-radius: 13px;
+    color: black;
+}
+
+.btn-slide:hover::before,
+.btn-slide:focus::before {
+    transform: scaleX(1);
+}
+
+.btn-slide:hover,
+.btn-slide:focus {
+    color: black;
+}
+
+.btn-slide {
+    z-index: 1;
+    transform: color 0.5s ease-in-out;
+}
+
+
+/* end of layouts section */
+
+.buttons-layouts {
+    position: absolute;
+    border: 1px solid white;
+    width: 100%;
+    height: 120rem;
+    top: 45.5rem;
 }
