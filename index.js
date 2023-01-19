@@ -1,4 +1,4 @@
-// var images = ['/images/layout-3.png', '/images/layout-4.png', '/images/layout-3.png', '/images/layout-4.png'];
+var images = ['/images/layout-3.png', '/images/layout-4.png', '/images/layout-3.png', '/images/layout-4.png'];
 
 // let i = 0;
 
@@ -9,6 +9,6 @@
 //     } else {
 //         i = 0;
 //     }
-//     setTimeout("slideShow()", 2000)
+//     setTimeout("slideShow()", 1000)
 // }
 // window.onload = slideShow;
